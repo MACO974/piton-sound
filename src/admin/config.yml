@@ -1,12 +1,38 @@
 ﻿# Configuration de l'interface d'administration
-# Pendant les tests en local, laisser local_backend a true.
-# Pour la mise en ligne reelle, voir les instructions dans README-CMS.md
+# Authentification par DecapBridge : le client se connecte avec Google,
+# Microsoft ou un mot de passe, sans compte GitHub.
+# Voir README-CMS.md pour le detail.
 
-local_backend: true
+# Mettre a true uniquement pour travailler en local avec "npm run cms"
+local_backend: false
 
 backend:
   name: git-gateway
+  repo: MACO974/piton-sound
   branch: main
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/3b4b3df0-7732-4eb4-9a7b-c48e7156769d/pkce
+  auth_token_endpoint: /sites/3b4b3df0-7732-4eb4-9a7b-c48e7156769d/token
+  gateway_url: https://gateway.decapbridge.com
+
+  # Chaque modification est signee par son auteur dans l'historique
+  commit_messages:
+    create: Create {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    update: Update {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    delete: Delete {{collection}} “{{slug}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    uploadMedia: Upload “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    deleteMedia: Delete “{{path}}” - {{author-name}} <{{author-login}}> via DecapBridge
+    openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
+
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
+
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+site_url: https://piton-sound.netlify.app
 
 media_folder: "src/images"
 public_folder: "/images"
