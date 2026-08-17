@@ -1,0 +1,164 @@
+{
+  "contact": {
+    "telephone": "0692 00 00 00",
+    "email": "contact@piton-sound.re",
+    "secteur": "Toute l'île, déplacement compris",
+    "reservation": "3 à 6 mois à l'avance conseillé"
+  },
+  "prestations": [
+    {
+      "titre": "Sonorisation",
+      "texte": "Système adapté à la taille de la salle, de 50 à 400 personnes. Micros HF pour les discours et la cérémonie."
+    },
+    {
+      "titre": "Éclairage",
+      "texte": "Lyres, pars LED et machine à fumée. Ambiance douce au dîner, montée en puissance à l'ouverture de bal."
+    },
+    {
+      "titre": "Animation",
+      "texte": "Annonces, entrée des mariés, jeux, karaoké. Ni trop présent, ni absent : on cadre sans prendre la vedette."
+    },
+    {
+      "titre": "Repérage inclus",
+      "texte": "Visite du lieu avant le jour J : accès, électricité, acoustique. Aucune mauvaise surprise le soir même."
+    }
+  ],
+  "bandeau": [
+    {
+      "mot": "Mariages"
+    },
+    {
+      "mot": "Anniversaires"
+    },
+    {
+      "mot": "Soirées d'entreprise"
+    },
+    {
+      "mot": "Baptêmes"
+    },
+    {
+      "mot": "Kabars"
+    },
+    {
+      "mot": "Karaoké"
+    }
+  ],
+  "references": [
+    {
+      "date": "Novembre 2025",
+      "titre": "Mariage · Saint-Gilles les Hauts",
+      "texte": "210 invités, cérémonie laïque en extérieur puis soirée en salle. Ouverture de bal sur un séga."
+    },
+    {
+      "date": "Septembre 2025",
+      "titre": "Soirée d'entreprise · Le Port",
+      "texte": "Séminaire de 120 collaborateurs, sonorisation conférence en journée et soirée dansante ensuite."
+    },
+    {
+      "date": "Juillet 2025",
+      "titre": "Kabar · Sainte-Suzanne",
+      "texte": "Soirée maloya en plein air, 300 personnes, système de son adapté à l'extérieur."
+    },
+    {
+      "date": "Mai 2025",
+      "titre": "Anniversaire 50 ans · Le Tampon",
+      "texte": "90 invités, format karaoké puis dancefloor. Playlist construite avec la famille en amont."
+    }
+  ],
+  "formules": [
+    {
+      "nom": "Essentiel",
+      "prix": "490 €",
+      "detail": "Jusqu'à 80 personnes",
+      "populaire": false,
+      "points": [
+        {
+          "point": "Sonorisation adaptée à la salle"
+        },
+        {
+          "point": "Éclairage de piste"
+        },
+        {
+          "point": "1 micro HF"
+        },
+        {
+          "point": "Jusqu'à 5 h de prestation"
+        }
+      ]
+    },
+    {
+      "nom": "Mariage",
+      "prix": "890 €",
+      "detail": "Jusqu'à 250 personnes",
+      "populaire": true,
+      "points": [
+        {
+          "point": "Sonorisation cérémonie et soirée"
+        },
+        {
+          "point": "Éclairage complet, lyres et fumée"
+        },
+        {
+          "point": "2 micros HF, discours et témoins"
+        },
+        {
+          "point": "Animation et entrée des mariés"
+        },
+        {
+          "point": "Repérage du lieu inclus"
+        },
+        {
+          "point": "Jusqu'à 3 h du matin"
+        }
+      ]
+    },
+    {
+      "nom": "Entreprise",
+      "prix": "Sur devis",
+      "detail": "Séminaires et soirées",
+      "populaire": false,
+      "points": [
+        {
+          "point": "Sono conférence et soirée"
+        },
+        {
+          "point": "Vidéoprojection et écran"
+        },
+        {
+          "point": "Régie sur toute la durée"
+        },
+        {
+          "point": "Facturation entreprise"
+        }
+      ]
+    }
+  ],
+  "devis_intro": "Réponse sous 24 h avec la disponibilité et un tarif ferme. Le devis ne vous engage à rien.",
+  "nom_entreprise": "Piton Sound",
+  "prestations_intro": "Le matériel ne fait pas la soirée. On vient en repérage, on cale le déroulé avec vous, et on adapte en direct selon la salle.",
+  "devis_titre": "Votre date est-elle libre ?",
+  "avis_titre": "Ce qu'ils en disent",
+  "prestations_titre": "Tout le matériel, et quelqu'un derrière",
+  "formules_intro": "Tarifs pour une prestation en soirée sur l'île. Installation et démontage compris, sans supplément horaire jusqu'à 3 h du matin.",
+  "hero": {
+    "surtitre": "DJ & sonorisation · Toute l'île",
+    "titre": "La piste ne se vide jamais",
+    "texte": "Sonorisation, éclairage et animation pour mariages, anniversaires et soirées d'entreprise. Séga, maloya, dancehall, généraliste : on lit la salle et on l'emmène."
+  },
+  "references_titre": "Quelques soirées",
+  "formules_titre": "Trois formats, un seul niveau d'exigence",
+  "avis": [
+    {
+      "texte": "Le repérage a tout changé. Ils avaient repéré que la salle avait un souci de prise électrique et ont amené ce qu'il fallait. On n'a rien vu venir.",
+      "auteur": "Sabrina & Kevin · Mariage, novembre 2025"
+    },
+    {
+      "texte": "Ma grand-mère de 82 ans a dansé. Voilà, c'est tout ce que j'ai à dire.",
+      "auteur": "Jean-Marc P. · Anniversaire, mai 2025"
+    },
+    {
+      "texte": "Prestation en deux temps, conférence puis soirée. Sérieux, ponctuels, facture nickel pour la compta. On les reprend l'an prochain.",
+      "auteur": "Groupe Cambaie · Séminaire, septembre 2025"
+    }
+  ]
+}

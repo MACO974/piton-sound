@@ -1,0 +1,16 @@
+{
+  "name": "piton-sound",
+  "version": "1.0.0",
+  "description": "Site vitrine DJ et sonorisation - demonstration MA & CO",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "cms": "decap-server"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "decap-server": "^3.1.2"
+  }
+}

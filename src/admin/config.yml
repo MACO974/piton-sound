@@ -1,0 +1,98 @@
+﻿# Configuration de l'interface d'administration
+# Pendant les tests en local, laisser local_backend a true.
+# Pour la mise en ligne reelle, voir les instructions dans README-CMS.md
+
+local_backend: true
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/images"
+public_folder: "/images"
+
+locale: "fr"
+
+collections:
+  - name: "contenu"
+    label: "Contenu du site"
+    files:
+      - name: "general"
+        label: "Toutes les pages"
+        file: "src/_data/infos.json"
+        fields:
+          - { name: "nom_entreprise", label: "Nom de l'entreprise", widget: "string" }
+
+          - name: "hero"
+            label: "Bandeau d'accueil"
+            widget: "object"
+            fields:
+              - { name: "surtitre", label: "Petite ligne au-dessus du titre", widget: "string" }
+              - { name: "titre", label: "Grand titre", widget: "string" }
+              - { name: "texte", label: "Texte de presentation", widget: "text" }
+
+          - name: "bandeau"
+            label: "Bandeau defilant"
+            label_singular: "Mot"
+            widget: "list"
+            fields:
+              - { name: "mot", label: "Mot", widget: "string" }
+
+          - { name: "prestations_titre", label: "Titre de la section Prestations", widget: "string" }
+          - { name: "prestations_intro", label: "Introduction des Prestations", widget: "text" }
+          - name: "prestations"
+            label: "Prestations"
+            label_singular: "Prestation"
+            widget: "list"
+            fields:
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "texte", label: "Description", widget: "text" }
+
+          - { name: "formules_titre", label: "Titre de la section Formules", widget: "string" }
+          - { name: "formules_intro", label: "Introduction des Formules", widget: "text" }
+          - name: "formules"
+            label: "Formules et tarifs"
+            label_singular: "Formule"
+            widget: "list"
+            fields:
+              - { name: "nom", label: "Nom de la formule", widget: "string" }
+              - { name: "prix", label: "Prix affiche", widget: "string" }
+              - { name: "detail", label: "Precision sous le prix", widget: "string" }
+              - { name: "populaire", label: "Mettre en avant cette formule", widget: "boolean", default: false }
+              - name: "points"
+                label: "Ce qui est inclus"
+                label_singular: "Ligne"
+                widget: "list"
+                fields:
+                  - { name: "point", label: "Ligne", widget: "string" }
+
+          - { name: "references_titre", label: "Titre de la section References", widget: "string" }
+          - name: "references"
+            label: "References"
+            label_singular: "Reference"
+            widget: "list"
+            fields:
+              - { name: "date", label: "Date", widget: "string" }
+              - { name: "titre", label: "Titre", widget: "string" }
+              - { name: "texte", label: "Description", widget: "text" }
+
+          - { name: "avis_titre", label: "Titre de la section Avis", widget: "string" }
+          - name: "avis"
+            label: "Avis clients"
+            label_singular: "Avis"
+            widget: "list"
+            fields:
+              - { name: "texte", label: "Avis", widget: "text" }
+              - { name: "auteur", label: "Auteur et evenement", widget: "string" }
+
+          - { name: "devis_titre", label: "Titre de la section Devis", widget: "string" }
+          - { name: "devis_intro", label: "Introduction du Devis", widget: "text" }
+
+          - name: "contact"
+            label: "Coordonnees"
+            widget: "object"
+            fields:
+              - { name: "telephone", label: "Telephone", widget: "string" }
+              - { name: "email", label: "Email", widget: "string" }
+              - { name: "secteur", label: "Secteur d'intervention", widget: "string" }
+              - { name: "reservation", label: "Delai de reservation conseille", widget: "string" }
