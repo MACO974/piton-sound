@@ -39,18 +39,27 @@ sans mot de passe. Pratique pour tester, à désactiver pour la mise en ligne.
 À partir de là, chaque modification publiée depuis l'interface d'administration
 déclenche automatiquement un nouveau déploiement.
 
-## Donner l'accès au client (DecapBridge)
+## Donner l'accès au client (DecapBridge) — DÉJÀ CONFIGURÉ
 
 Netlify a supprimé son service d'authentification. On passe donc par DecapBridge,
 qui permet au client de se connecter avec Google, Microsoft ou un simple mot de passe,
 **sans avoir besoin d'un compte GitHub**.
 
-1. Créer un compte sur https://decapbridge.com
-2. Y ajouter le site et le dépôt GitHub correspondant
-3. DecapBridge fournit deux lignes de configuration à coller dans `src/admin/config.yml`,
-   à la place du bloc `backend` actuel
-4. Passer `local_backend` à `false`
-5. Inviter le client par email depuis DecapBridge
+C'est en place pour ce site. Pour inviter quelqu'un :
+
+1. Aller sur https://decapbridge.com/dashboard/sites
+2. Ouvrir le site **Piton Sound**
+3. Inviter la personne par email
+
+Elle reçoit un mail, choisit son mode de connexion, et arrive dans l'interface.
+Si elle oublie son mot de passe, elle le réinitialise seule.
+
+Chaque modification est signée par son auteur dans l'historique GitHub, on sait donc
+toujours qui a changé quoi.
+
+**Le jeton GitHub** utilisé par DecapBridge a une date d'expiration. Quand elle approche,
+en régénérer un sur https://github.com/settings/personal-access-tokens et le remplacer
+dans DecapBridge, sinon le CMS cessera d'enregistrer sans prévenir.
 
 Le client reçoit un mail, choisit son mode de connexion, et arrive directement
 dans l'interface. S'il oublie son mot de passe, il le réinitialise seul.
